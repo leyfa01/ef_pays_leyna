@@ -37,12 +37,17 @@
                     let carte = document.createElement("div");
                     carte.classList.add("restapi__carte");
                     
+                    let imageUrl = "https://via.placeholder.com/150";
+
+                    if (article._embedded['wp:featuredmedia'] && article._embedded['wp:featuredmedia'][0] && article._embedded['wp:featuredmedia'][0].source_url) {
+                        imageUrl = article._embedded['wp:featuredmedia'][0].source_url;
+                    }
                     // Remplir la carte
                     carte.innerHTML = `
                     <div class="carte">
                         <h4><a href="https://gftnth00.mywhc.ca/tim39/?p=${article.id}">${titre}</a></h4>
                         <div class="carte_description">
-                            <img src="${article._embedded['wp:featuredmedia']['0'].source_url}" alt="">
+                            <img src="${imageUrl}" alt="">
                             ${contenu}</p>
                         </div>
                         
