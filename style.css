@@ -13,4 +13,22 @@
   border-radius: 0.4rem;
   flex: 0 0 15%;
   padding: 0.5rem;
+}
+
+.destinations_pays {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.destinations_pays .restapi__carte .carte .carte_description {
+  display: flex;
+  align-items: center;
+}
+.destinations_pays .restapi__carte .carte .carte_description img {
+  max-height: 5rem;
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
