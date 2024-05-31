@@ -62,5 +62,5 @@
             });
     }
 
-    fetchUrl(`https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=France&_embed`)
+    fetchUrl(`https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=France&_embed`);
 })();
