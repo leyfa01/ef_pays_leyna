@@ -1,0 +1,16 @@
+.les_pays {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+    .un_pays{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 0.4rem;
+      flex: 0 0 15%;
+      padding: 0.5rem;
+    }
+}
