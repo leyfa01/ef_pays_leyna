@@ -10,7 +10,7 @@
             fetchUrl(url);
         })
     }
-
+    
 
     function fetchUrl(url) {
         fetch(url)
@@ -61,4 +61,6 @@
                 console.error("Erreur lors de la récupération des données :", error);
             });
     }
+
+    fetchUrl(`https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=France&_embed`)
 })();

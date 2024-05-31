@@ -31,4 +31,10 @@
 .destinations_pays .restapi__carte .carte .carte_description img {
   height: 5rem;
   margin-right: 1rem;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .destinations_pays .restapi__carte .carte .carte_description img {
+    display: initial;
+  }
 }/*# sourceMappingURL=style.css.map */
