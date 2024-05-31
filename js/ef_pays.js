@@ -7,12 +7,12 @@
             console.log("ff");
             le_pays = e.target.id;
             url = `https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=${le_pays}&_embed`;
-            fetchUrl(url);
+            fetchUrlPays(url);
         })
     }
     
 
-    function fetchUrl(url) {
+    function fetchUrlPays(url) {
         fetch(url)
             .then(function (response) {
                 // Vérifier si la réponse est OK (statut HTTP 200)
@@ -62,5 +62,5 @@
             });
     }
 
-    fetchUrl(`https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=France&_embed`);
+    fetchUrlPays(`https://gftnth00.mywhc.ca/tim39/wp-json/wp/v2/posts?search=France&_embed`);
 })();
